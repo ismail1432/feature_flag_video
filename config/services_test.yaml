@@ -28,8 +28,8 @@ services:
         tags: ['controller.service_arguments']
 
 
-    App\FeatureEnvironmentRepository: ~
-    App\FeatureRepositoryInterface: '@App\FeatureEnvironmentRepository'
+    App\InMemoryFeatureRepository: ~
+    App\FeatureRepositoryInterface: '@App\InMemoryFeatureRepository'
 
     # add more service definitions when explicit configuration is needed
     # please note that last definitions always *replace* previous ones
